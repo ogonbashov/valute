@@ -1,0 +1,21 @@
+package com.company;
+
+import javax.swing.JOptionPane;
+
+public class Main {
+    public static void main(String[] args) {
+        String fn= JOptionPane.showInputDialog("how many soms do you have?");
+
+
+
+        double num1 = Integer.parseInt(fn);
+        double num= num1/75.6;
+        double sum= num1/84.0;
+        double rub= num1/1.055;
+        double kzt= num1/0.02;
+
+
+
+        JOptionPane.showMessageDialog(null,"USD "+num +"\nEUR "+ sum+"\nRUB "+rub+"\nKZT "+kzt,"currency exchange",JOptionPane.PLAIN_MESSAGE);
+    }
+}
